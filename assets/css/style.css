@@ -1,0 +1,223 @@
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+
+body, html {
+	color: #ffffff;
+	background-color: black;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 300;
+	font-size: 1rem;
+	line-height: 1.65;
+	scroll-behavior: smooth;
+}
+
+#main {
+	display: flex; 
+	align-items: center; 
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+/* List */
+
+nav ul {
+	display: flex;
+	margin-bottom: 0;
+	list-style: none;
+	padding-left: 0;
+	border: solid 1px #ffffff;
+	border-radius: 4px;
+}
+
+nav ul li a {
+	display: block;
+	min-width: 7.5rem;
+	height: 2.75rem;
+	line-height: 2.75rem;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	font-size: 0.8rem; 
+	border-bottom: 0;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	border-left: solid 1px #ffffff;
+}
+
+nav ul li a:hover {
+	background-color: rgba(255, 255, 255, 0.075);
+}
+
+nav ul li a:active {
+	background-color: rgba(255, 255, 255, 0.175);
+}
+
+a {
+	border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	border-bottom-color: transparent;
+}
+
+
+p {
+	margin: 0 0 2rem 0;
+}
+
+h1, h2 {
+	color: #ffffff;
+	font-weight: 600;
+	line-height: 1.5;
+	margin: 0 0 1rem 0;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+}
+
+h1 a, h2 a {
+	color: inherit;
+}
+
+h1.major, h2.major {
+	border-bottom: solid 1px #ffffff;
+	width: max-content;
+	padding-bottom: 0.5rem;
+	margin: 0 0 2rem 0;
+	}
+
+h1 {
+	font-size: 2.25rem;
+	line-height: 1.3;
+	letter-spacing: 0.5rem;
+	
+}
+
+h2 {
+	font-size: 1.5rem;
+	line-height: 1.4;
+	letter-spacing: 0.5rem;
+	
+}
+
+
+/* header */
+
+#header {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%; 
+}
+
+.content{
+border-style: solid;
+border-color: #ffffff;
+border-top-width: 1px;
+border-bottom-width: 1px;
+border-radius: 4px;
+max-width: 100%; 
+padding: 2rem;
+}
+
+.content.inner {
+transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+transition-delay: 0.25s;
+overflow: hidden;
+}
+
+.content p {
+text-transform: uppercase;
+letter-spacing: 0.2rem;
+font-size: 0.8rem;
+line-height: 2;
+}
+
+/* about */
+
+#about {
+	min-height: 100vh;
+	padding: 50px;
+	height: 100%; 
+	width: 100%; 
+	 
+}
+
+#about-img {
+	height: 450px;
+	border-radius: 100px;
+	border-end-start-radius: 0px;
+	border-end-end-radius: 0px;
+	box-shadow: 12px 12px 1px #fff5ed;
+	overflow-y:hidden;
+	margin-top: 20px;
+}
+
+#container {
+	display: flex;
+	flex-direction: row; 
+	align-items: center;
+	justify-content: center;
+	padding-top: 30px; 
+}
+
+.me {
+	margin: 40px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 30px;
+	flex-direction: row;
+	overflow-y: auto;
+	line-height: 22px;
+	height: 390px;
+	width: 600px;
+	font-size: 90%;
+	border-radius: 4px;
+	background-color: #2a2d34;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* projects */
+
+#projects {
+	min-height: 100vh;
+	padding: 50px;
+	height: 100%; 
+	width: 100%; 
+	flex-direction: row;
+}
+
+/* education */
+
+#education {
+	min-height: 100vh;
+	padding: 50px;
+	height: 100%; 
+	width: 100%; 
+	flex-direction: row;
+}
+
+/* contact */
+
+#contact {
+	min-height: 50vh;
+	padding: 50px;
+	height: 100%; 
+	width: 100%; 
+	flex-direction: row;
+}
+
+
+/* footer */
+#footer {
+	height: 6em;
+	text-align: center;
+}
+
+/* buttons */
