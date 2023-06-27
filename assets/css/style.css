@@ -9,6 +9,7 @@ body, html {
 	font-size: 1rem;
 	line-height: 1.65;
 	scroll-behavior: smooth;
+	box-sizing: border-box;
 }
 
 #main {
@@ -17,6 +18,7 @@ body, html {
 	justify-content: center;
 	flex-wrap: wrap;
 	align-content: center;
+	position: relative; 
 }
 
 /* List */
@@ -64,7 +66,7 @@ a:hover {
 }
 
 
-p {
+p, pre {
 	margin: 0 0 2rem 0;
 }
 
@@ -99,9 +101,7 @@ h2 {
 	font-size: 1.5rem;
 	line-height: 1.4;
 	letter-spacing: 0.5rem;
-	
 }
-
 
 /* header */
 
@@ -162,36 +162,161 @@ line-height: 2;
 	display: flex;
 	flex-direction: row; 
 	align-items: center;
-	justify-content: center;
-	padding-top: 30px; 
+	justify-content: center; 
 }
 
 .me {
 	margin: 40px;
-	margin-top: 20px;
-	margin-bottom: 20px;
 	padding: 30px;
 	flex-direction: row;
 	overflow-y: auto;
 	line-height: 22px;
-	height: 390px;
-	width: 600px;
+	height: 400px;
+	width: 699px;
 	font-size: 90%;
-	border-radius: 4px;
+	border-radius: 10px;
 	background-color: #2a2d34;
 	font-family: 'Courier New', Courier, monospace;
 }
 
-
 /* projects */
 
 #projects {
-	min-height: 100vh;
-	padding: 50px;
 	height: 100%; 
 	width: 100%; 
-	flex-direction: row;
+	min-height: 100vh;
+	padding: 50px;
 }
+
+.project {
+	margin: 40px;
+	padding: 30px;
+	height: 400px;
+	width: 1240px;
+	overflow: hidden;
+	padding: 80px 0;
+	border-radius: 12px;
+	background-color: #2a2d34;
+	display: flex;
+	flex-direction: column; 
+}
+
+.project .main-card {
+	display: flex;
+	justify-content:flex-start;
+	width: 200%;
+	transition: 1s;
+}
+
+#two:checked ~ .main-card {
+	margin-left: -100%;
+}
+
+.main-card .cards .card {
+	width: 250px;
+	height: 250px;
+	justify-content: center;
+	background: #fff;
+	border-radius: 12px;
+	margin-right: 20px;
+	margin-left: 20px;
+	padding: 60px;
+	transition: all 1s ease;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+}
+
+.main-card .cards .card:hover {
+	transform: rotateY(180deg); 
+}
+
+.card .back {
+  background: #fff;
+  position: absolute;
+  border-radius: 12px;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card .back p {
+	color: black;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	display: flex;
+	margin-left: 20px;
+	justify-content: center;
+}
+
+.card .back h2 {
+	color: black;
+	font-weight: 600;
+	line-height: 1.5;
+	margin: 0 0 1rem 0;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	display: flex;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	margin-top: 20px;
+	justify-content: center;
+}
+
+.card .front {
+  transform: rotateY(0deg);
+}
+
+.card .back {
+  transform: rotateY(180deg);
+}
+
+.card p {
+	color: black;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	margin-right:10px;
+}
+
+.button {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: auto; 
+}
+
+.button label {
+	height: 15px;
+	width: 15px;
+	border-radius: 20px;
+	background: #fff;
+	margin: 0 5px;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+.button label.active {
+	width: 35px;
+}
+
+#one:checked ~ .button .one {
+	width: 35px;
+}
+
+#one:checked ~ .button .two {
+	width: 15px;
+}
+
+#two:checked ~ .button .one {
+	width: 15px;
+}
+
+#two:checked ~ .button .two {
+	width: 35px;
+} 
+
+input[type="radio"] {
+	display: none;
+}
+
 
 /* education */
 
@@ -212,7 +337,6 @@ line-height: 2;
 	width: 100%; 
 	flex-direction: row;
 }
-
 
 /* footer */
 #footer {

@@ -35,7 +35,37 @@
 								<h2 class="major">About</h2>
 								<div id="container"> 
 								<div class="me">
-									
+									<pre>
+package me; 
+
+public class Jennifer implements Authenticity, Growth, Compassion {
+	Resume resume; 
+
+	public Resume getResume() {
+		return new Resume("<a href="assets/Jennifer Cheung.pdf">Jen.pdf</a>");
+	}
+
+	public static void main(String[] args) {
+		String governmentName = Jennifer Cheung; 
+		int age = 20; 
+		String homeTown = "Malden, Massachusetts"; 
+		String university = "Northestern University"; 
+		String[] majors = new String[] {
+			"Computer Science", 
+			"Behavioral Neuroscience"
+		};
+		int expectedGraduation = 2025; 
+		Color favoriteColor = WHITE; 
+		String[] hobbiesAndInterests = new String[] {
+			"Cooking", 
+			"Coffee", 
+			"Video Games", 
+			"Flowers",
+			"Cuddling my puppy",
+			"Binging Korean dramas" 
+		}; 
+	}
+									</pre>
 								</div>
 
 								<div> 
@@ -47,9 +77,82 @@
 						<!-- Projects -->
 							<section id="projects">
 								<h2 class="major">Projects</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<div class="project">
+									<input type="radio" name="dot" id="one">
+									<input type="radio" name="dot" id="two">
+									<div class="main-card">
+										
+										<div class="cards">
+											<div class="card">
+												<p>battlesaslvo</p>
+												<div class="back">
+													<h2>BattleSalvo</h2>
+													<p> A Java command-line rendition of the classic game Battleship with a twist.
+														Features flexible board sizes, set ship sizes, and a unique shooting order. 
+														Supports both single-player mode against an AI opponent and multiplayer mode via 
+													    sockets.</p>
+												  </div>
+											</div>									
+										</div>
+
+										<div class="cards">
+											<div class="card">
+												<p>maze</p>
+												<div class="back">
+													<h2>Maze</h2>
+													<p>Players navigate mazes, randomly generated using Kruskal's algorithm, from the top-left corner 
+														to the bottom-right corner. Different maze dimensions are supported, and two solving 
+														algorithms are offered: breadth-first search (BFS) and depth-first search (DFS). The maze is rendered
+														using a graphical interface, with start and end cells highlighted, visited cells marked, 
+														and the solution path displayed.</p>
+												  </div>
+
+											</div>	
+										</div>
+
+										<div class="cards">
+											<div class="card">
+													<p>second-chance</p>
+												  <div class="back">
+													<h2>Second-Chance Co</h2>
+													<p>An online marketplace for secondhand clothing, offering a platform for individuals 
+														to sell their clothes to others. Users can upload photos and descriptions of their items, 
+														browse products, add items to their cart, and manage their profile. The project utilizes a MySQL 8 
+														container, a Python Flask container for the REST API, and a local AppSmith server for deployment.</p>
+												  </div>
+
+											</div>
+										</div>
+
+										<div class="cards">
+											<div class="card">
+												<p>bullet journal</p>
+												<div class="back">
+													<h2>Bullet Journal</h2>
+													<p>An interactive application developed using SceneBuilder, JavaFX, and Java to track events and tasks for individual weeks. 
+														Features included: week view, event and task creation, persistence using JSON encoding, commitment warnings for maximum events and tasks, 
+														task sidebar, categorization of events and tasks, quotes and notes section, deletion of tasks and events, weekly overview statistics, 
+														editing existing events and tasks, and auto tags for categories. The goal is to create a customizable and user-friendly application that
+														 simulates the experience of a physical bullet journal.</p>
+												  </div>
+											</div>									
+										</div>
+
+										<div class="cards">
+											<div class="card">
+												<p>personal website</p>
+												<div class="back">
+													<h2>Personal Website</h2>
+													<p>This website is entirely coded in HTML, CSS, and JavaScript! Still (and always) ready for improvement.</p>
+												  </div>
+											</div>									
+										</div>
+									</div>
+									<div class="button">
+										<label for="one" class=" active one"></label>
+										<label for="two" class="two"></label>
+									</div>
+								</div>
 							</section>
 
 						<!-- Education -->
@@ -165,6 +268,7 @@
 
 				<!-- Footer -->
 					<footer class="footer-bg" id="footer">
+						Coded by Jennifer Cheung  🌸 Updated: 2023 🌸
 					</footer>
 
 			</div>
