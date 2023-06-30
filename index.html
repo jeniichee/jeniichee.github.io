@@ -5,30 +5,24 @@
 		<title>Jennifer Cheung</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/style.css" />
 	</head>
 	<body>
-
 				<!--Heading -->
-					<sec id="header">
-						<div class="content">
-							<div class="inner">
-								<h1>Jennifer Cheung</h1>
-								<!-- <p id="app">hello</p> -->
-							</div>
-						</div>
-
-						<nav>
-							<ul>
-								<li><a href="#about">About</a></li>
-								<li><a href="#projects">Projects</a></li>
-								<li><a href="#education">Education</a></li>
-								<li><a href="#contact">Contact</a></li>
-							</ul>
-						</nav>
-					</sec>
-
-					<div id="main">
+				<section id="header">
+					<div class="content">
+							<h1 id="app"></h1>
+					</div>
+				
+					<nav>
+						<ul>
+							<li><a href="#about">About</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#more">Learn More</a></li>
+						</ul>
+					</nav>
+				</section>
 
 						<!-- About -->
 							<section id="about">
@@ -38,7 +32,7 @@
 									<pre>
 package me; 
 
-public class Jennifer implements Authenticity, Growth, Compassion {
+public class Jennifer implements Authenticity, Growth, Compassion, Family {
 	Resume resume; 
 
 	public Resume getResume() {
@@ -67,11 +61,9 @@ public class Jennifer implements Authenticity, Growth, Compassion {
 	}
 									</pre>
 								</div>
-
 								<div> 
-								<img src="images/jen.jpg" id="about-img"> 
+								<img src="images/jen.jpg" id="about-img">
 							</div>
-						</div>
 							</section>
 
 						<!-- Projects -->
@@ -84,13 +76,13 @@ public class Jennifer implements Authenticity, Growth, Compassion {
 										
 										<div class="cards">
 											<div class="card">
-												<p>battlesaslvo</p>
+												<p>BattleSalvo</p>
+												
 												<div class="back">
-													<h2>BattleSalvo</h2>
-													<p> A Java command-line rendition of the classic game Battleship with a twist.
-														Features flexible board sizes, set ship sizes, and a unique shooting order. 
-														Supports both single-player mode against an AI opponent and multiplayer mode via 
-													    sockets.</p>
+													<p> Java command-line rendition of classic Battleship with a twist. 
+														Supports both single-player vs. AI and multiplayer via sockets. 
+														Communication between server and client are serialized into files to 
+														ensure persistance.</p>
 												  </div>
 											</div>									
 										</div>
@@ -98,13 +90,10 @@ public class Jennifer implements Authenticity, Growth, Compassion {
 										<div class="cards">
 											<div class="card">
 												<p>maze</p>
-												<div class="back">
-													<h2>Maze</h2>
-													<p>Players navigate mazes, randomly generated using Kruskal's algorithm, from the top-left corner 
-														to the bottom-right corner. Different maze dimensions are supported, and two solving 
-														algorithms are offered: breadth-first search (BFS) and depth-first search (DFS). The maze is rendered
-														using a graphical interface, with start and end cells highlighted, visited cells marked, 
-														and the solution path displayed.</p>
+												<div class="back">		
+													<p>Players navigate mazes from the top-left corner to the bottom-right corner, and solves it 
+														using either BFS or DFS. The mazes are randomly generated using Kruskal’s Algorithm. Graphical 
+													interface renders cells and highlights actions.</p>
 												  </div>
 
 											</div>	
@@ -114,11 +103,9 @@ public class Jennifer implements Authenticity, Growth, Compassion {
 											<div class="card">
 													<p>second-chance</p>
 												  <div class="back">
-													<h2>Second-Chance Co</h2>
-													<p>An online marketplace for secondhand clothing, offering a platform for individuals 
-														to sell their clothes to others. Users can upload photos and descriptions of their items, 
+													<p>Platform for individuals to sell their clothes to others. Users can upload photos and descriptions of their items, 
 														browse products, add items to their cart, and manage their profile. The project utilizes a MySQL 8 
-														container, a Python Flask container for the REST API, and a local AppSmith server for deployment.</p>
+														container, a Python Flask container for REST API, and a local AppSmith server for deployment.</p>
 												  </div>
 
 											</div>
@@ -128,12 +115,9 @@ public class Jennifer implements Authenticity, Growth, Compassion {
 											<div class="card">
 												<p>bullet journal</p>
 												<div class="back">
-													<h2>Bullet Journal</h2>
-													<p>An interactive application developed using SceneBuilder, JavaFX, and Java to track events and tasks for individual weeks. 
-														Features included: week view, event and task creation, persistence using JSON encoding, commitment warnings for maximum events and tasks, 
-														task sidebar, categorization of events and tasks, quotes and notes section, deletion of tasks and events, weekly overview statistics, 
-														editing existing events and tasks, and auto tags for categories. The goal is to create a customizable and user-friendly application that
-														 simulates the experience of a physical bullet journal.</p>
+													<p>Interactive application developed with SceneBuilder, JavaFX, and Java to track events/tasks for individual weeks. 
+														Features: week view, event/task creation, persistence using JSON encoding, deletion of events/tasks,
+														editing existing events/tasks, and categories.</p>
 												  </div>
 											</div>									
 										</div>
@@ -142,7 +126,6 @@ public class Jennifer implements Authenticity, Growth, Compassion {
 											<div class="card">
 												<p>personal website</p>
 												<div class="back">
-													<h2>Personal Website</h2>
 													<p>This website is entirely coded in HTML, CSS, and JavaScript! Still (and always) ready for improvement.</p>
 												  </div>
 											</div>									
@@ -155,127 +138,61 @@ public class Jennifer implements Authenticity, Growth, Compassion {
 								</div>
 							</section>
 
-						<!-- Education -->
-							<section id="education">
-								<h2 class="major">Education</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+							<!-- Learn More -->
+							<section id="more"> 
+								<h2 class="major">Learn More</h2>
+								<p>you don't know too much about me. lets fix that.</p>
+								<div id="morecon">
+								<button class="accordion">cognitive gears</button>
+								<div class="panel">
+									<p><strong>take a peek inside my mind.</strong></p>
+										<p>
+										always choose optimism.<br>
+										be a bringer of joy and laughter.<br>
+								        finite to fail, infinite to venture.<br>	
+										we will always either find a way, or make one.<br>
+										pursue whatever you are truly passionate about.<br>
+										if you don’t know, do not fear--embrace, learn, conquer.<br>
+										be loving, compassionate, understanding, and unstoppable.<br>	
+									</p>
+								</div>
+
+								<button class="accordion">random facts</button>
+								<div class="panel">
+									<ul>
+										<li>im active in a few organizations in my school, namely the Sherman Center, the Asian Student Union (ASU), and Tri Sigma (ΣΣΣ).</li>
+										<li>early career preferences since i was a toddler: singer, artist, patisserie, chef, aerospace engineer, neurosurgeon</li>
+										<li>i graduated alongside 85 peers from a charter school with an International Baccalaureate system.</li>
+										<li><u>mbti:</u> infj-t</li>
+										<li>im obsessed with both coffee and tea--the scent, the taste, the texture, the art and meticulousness of preparing a singular cup.</li>
+										<li>id love to open my own café one day.</li>
+										<li>im allergic to dust, so i have to clean my room almost every day especially since i have a very, very fluffy pomeranian husky who sheds every single day :D</li>
+										<li>90% of my camera role consists of my six-year old pomsky. Her name is Yuki.</li>
+										<li>i like to play league of legends and valorant. am i good at them? well, "good" is relative.</li>
+									</ul>
+								</div>
+
+								<button class="accordion">gallery</button>
+								<div class="panel">
+									<p>Lorem ipsum...</p>
+								</div>
+
+							</div>
 							</section>
-
-						<!-- Contact -->
-							<section id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-
-					
-								<!-- <section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section> -->
-
-					</div>
 
 				<!-- Footer -->
-					<footer class="footer-bg" id="footer">
-						Coded by Jennifer Cheung  🌸 Updated: 2023 🌸
+					<footer class="copyright">
+						<div class="footer">
+							<a href="mailto:cheung.jenn@northeastern.edu"><img width="64" height="64" src="https://img.icons8.com/nolan/64/new-post.png" alt="new-post"/></a>
+							<a href="https://www.linkedin.com/in/jennifer-cheung1/"><img width="64" height="64" src="https://img.icons8.com/nolan/64/linkedin.png" alt="linkedin"/></a>
+							<a href="https://github.com/jeniichee"><img width="64" height="64" src="https://img.icons8.com/nolan/64/github.png" alt="github" alt="github"/></a>
+							<a href="https://www.instagram.com/jeniichee/"><img width="64" height="64" src="https://img.icons8.com/nolan/64/instagram-new.png" alt="instagram-new"/></a>					
+						</div>
+						coded by Jennifer Cheung  🌸 2023 🌸
 					</footer>
 
-			</div>
-
-			<script src="assets/js/script.js"></script>
 			<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-			
+			<script src="assets/script/script.js"></script>
 
 	</body>
 </html>
