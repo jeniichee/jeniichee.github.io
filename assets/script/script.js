@@ -8,35 +8,49 @@ var typewriter = new Typewriter(app, {
 });
 
 typewriter.typeString('hello!')
-    .pauseFor(2500)
+    .pauseFor(1500)
     .deleteAll()
+
     .typeString('nice to meet you!')
-    .pauseFor(2500)
+    .pauseFor(1500)
     .deleteAll()
+
     .typeString('my name is jen.')
-    .pauseFor(2500)
+    .pauseFor(1500)
     .deleteAll()
-    .typeString('i am currently studying cs and neuro.')
-    .pauseFor(2500)
-    .deleteChars(32)
-    .typeString('interested in ai and machine learning.')
-    .pauseFor(2500)
-    .deleteChars(38)
-    .typeString('an aspiring software engineer.')
-    .pauseFor(2500)
-    .deleteChars(30)
-    .typeString('also a coffee enthusiast.')
-    .pauseFor(2500)
+
+    .typeString('i study cs and neuro.')
+    .pauseFor(1500)
+    .deleteAll() 
+
+    .typeString('i develop software')
+    .pauseFor(1500)
+    .deleteAll()
+
+    .typeString('to empower others')
+    .pauseFor(1500)
+    .deleteAll()
+
+    .typeString('to enhance lives.')
+    .pauseFor(1500)
+    .deleteAll()
+
+    .typeString('i like to cook.')
+    .pauseFor(1500)
+    .deleteAll()
+
+    .typeString('i am also a coffee enthusiast.')
+    .pauseFor(1500)
     .deleteChars(25)
+
     .typeString('a proud mom to a six year old pomsky.')
-    .pauseFor(2500)
+    .pauseFor(1500)
     .deleteAll()
-    .typeString('above all, <strong>i am a daughter of a chef<strong>.')
-    .pauseFor(2500)
+
+    .typeString('thank you for visiting!')
+    .pauseFor(1500)
     .deleteAll()
-    .typeString('thank you for visiting! enjoy your stay :)')
-    .pauseFor(2500)
-    .deleteAll()
+
     .start();
 
 // light mode
