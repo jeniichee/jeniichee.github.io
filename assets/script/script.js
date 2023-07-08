@@ -8,7 +8,7 @@ var typewriter = new Typewriter(app, {
 });
 
 typewriter.typeString('hello!')
-    .pauseFor(1500)
+    .pauseFor(1000)
     .deleteAll()
 
     .typeString('nice to meet you!')
@@ -19,31 +19,27 @@ typewriter.typeString('hello!')
     .pauseFor(1500)
     .deleteAll()
 
-    .typeString('i study cs and neuro.')
+    .typeString('i am studying cs and neuro.')
     .pauseFor(1500)
     .deleteAll() 
 
-    .typeString('i develop software')
+    .typeString('i am also interested in design and business.')
+    .pauseFor(1500)
+    .deleteAll() 
+
+    .typeString('i develop software to empower others and enhance lives.')
     .pauseFor(1500)
     .deleteAll()
 
-    .typeString('to empower others')
-    .pauseFor(1500)
-    .deleteAll()
-
-    .typeString('to enhance lives.')
-    .pauseFor(1500)
-    .deleteAll()
-
-    .typeString('i like to cook.')
+    .typeString('in my free time, i like to take long walks with my puppy.')
     .pauseFor(1500)
     .deleteAll()
 
     .typeString('i am also a coffee enthusiast.')
     .pauseFor(1500)
-    .deleteChars(25)
+    .deleteAll()
 
-    .typeString('a proud mom to a six year old pomsky.')
+    .typeString('i find peace in selfcare (gym, skincare, cosmetics).')
     .pauseFor(1500)
     .deleteAll()
 
@@ -51,15 +47,21 @@ typewriter.typeString('hello!')
     .pauseFor(1500)
     .deleteAll()
 
+    .typeString('enjoy the rest of your day :)')
+    .pauseFor(1500)
+    .deleteAll()
+
     .start();
 
-// light mode
-function light() {
-    var element = document.body;
-    element.classList.toggle("light-mode");
-  }
+// dark mode
+
+// function dark() {
+//     var element = document.body;
+//     element.classList.toggle("dark-mode");
+//   }
 
 // open accordian 
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -74,6 +76,21 @@ for (i = 0; i < acc.length; i++) {
       panel.style.display = "block";
     }
   });
+}
+
+// navbar scroll 
+
+window.addEventListener("scroll", () => scroll);
+
+function scroll() {
+  const header = document.querySelector("#header").offsetHeight;
+  const navbar = document.querySelector(".nav")
+  
+  if (window.pageYOffset >= header) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
 }
 
   
