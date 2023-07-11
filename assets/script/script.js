@@ -23,7 +23,7 @@ typewriter.typeString('hello!')
     .pauseFor(1500)
     .deleteAll() 
 
-    .typeString('i am also interested in bioinformatics and design.')
+    .typeString('i am also interested in design and business.')
     .pauseFor(1500)
     .deleteAll() 
 
