@@ -23,11 +23,11 @@ typewriter.typeString('hello!')
     .pauseFor(1500)
     .deleteAll() 
 
-    .typeString('i am also interested in design and business.')
+    .typeString('i am also interested in bioinformatics and design.')
     .pauseFor(1500)
     .deleteAll() 
 
-    .typeString('i develop software to empower others and enhance lives.')
+    .typeString('my work serves to empower others and enhance lives.')
     .pauseFor(1500)
     .deleteAll()
 
