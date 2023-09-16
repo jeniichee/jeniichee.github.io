@@ -19,6 +19,7 @@
 							<li><a href="#about">About</a></li>
 							<li><a href="#projects">Projects</a></li>
 							<li><a href="#more">Learn More</a></li>
+							<li><a href="#contact">Contact Me</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -41,7 +42,7 @@ public class Jennifer implements Growth, Compassion, Family {
 	Resume resume; 
 
 	public Resume getResume() {
-		return new Resume("<a href="assets/Jennifer Cheung.pdf">Jen.pdf</a>");
+		return new Resume('<a href="assets/Jennifer Cheung.pdf"><u>Jen.pdf</u></a>');
 	}
 
 	public static void main(String[] args) {
@@ -55,17 +56,30 @@ public class Jennifer implements Growth, Compassion, Family {
 		};
 		int expectedGraduation = 2025; 
 		Color favoriteColor = WHITE; 
-		String[] hobbiesAndInterests = new String[] {
+		String[] hobbies = new String[] {
 			"Cooking", 
-			"Coffee", 
 			"Video Games", 
-			"Flowers",
-			"Cuddling my puppy",
 			"Binging Korean dramas" 
 			"Skincare"
+			"Makeup"
 			"Gym"
+			"Acrylic/oil painting"
+		}; 
+		String[] interests = new String[] {
+			"Patient Outcome"
+			"Sustainabilitiy"
+			"Personalized Therapies"
+			"Surgical Robots"
+			"Vision"
+			"AI"
+			"Flowers",
+			"My puppy",
+			"Coffee/Tea" 
+			"Food"
 		}; 
 	}
+}
+
 </pre>
 </div>
 <div class="polariod">
@@ -118,7 +132,8 @@ public class Jennifer implements Growth, Compassion, Family {
 											</div>
 
 											<div class="card">
-												<p>bullet journal</p><img width="64" height="64" src="https://img.icons8.com/dusk/64/book.png" alt="book"/>
+												<p>bullet journal</p>
+												<img width="64" height="64" src="https://img.icons8.com/dusk/64/book.png" alt="book"/>
 												<div class="back">
 													<p>Interactive application developed with SceneBuilder, JavaFX, and Java to track events/tasks for individual weeks. 
 														Features: week view, event/task creation, persistence using JSON encoding, deletion of events/tasks,
@@ -132,7 +147,16 @@ public class Jennifer implements Growth, Compassion, Family {
 												<div class="back">
 													<p>This website is entirely coded in HTML, CSS, and JavaScript! Still (and always) ready for improvement.</p>
 												  </div>
-											</div>									
+											</div>
+											
+											<div class="card">
+												<p>aquasense</p>
+												<img width="64" height="64" src="https://img.icons8.com/dusk/64/water-bottle.png" alt="water-bottle"/>
+												<div class="back">
+													<p>water bottle gadget developed using an arduino nano and etape sensor. tracks a person's daily water intake. 
+														data collected is displayed on a website.</p>
+												  </div>
+											</div>
 										
 									</div>
 									<div class="button">
@@ -145,14 +169,13 @@ public class Jennifer implements Growth, Compassion, Family {
 							<!-- Learn More -->
 							<section id="more"> 
 								<h2 class="major">Learn More</h2>
-								<p>you don't know too much about me. lets fix that.</p>
 								<div id="morecon">
 								<button class="accordion">my mind</button>
 								<div class="panel">
 									<p><strong>take a peek inside my mind.</strong></p>
 										<p>
 										im a perpetual student.<br>
-										always choose optimism.<br>
+										always choose positivity.<br>
 										be a bringer of joy and laughter.<br>
 								        finite to fail, infinite to venture.<br>
 										we will always either find a way, or make one.<br>
@@ -165,38 +188,36 @@ public class Jennifer implements Growth, Compassion, Family {
 
 								<button class="accordion">random facts</button>
 								<div class="panel">
+									<div class="bulletpoints">
 									<ul>
 										<li><u>mbti:</u> infj-t</li>
-										<li>im active in a few organizations in my school, namely the Sherman Center, the Asian Student Union (ASU), and Tri Sigma (ΣΣΣ).</li>
-										<li>early career preferences since i was a toddler: singer, artist, patisserie, chef, aerospace engineer, neurosurgeon</li>
-										<li>i graduated alongside 85 peers from a charter school with an International Baccalaureate system.</li>
+										<li><u>early career preferences</u>: singer, artist, patisserie, chef, aerospace engineer, neurosurgeon, cafe owner</li>
+										<li>i graduated with a class of 85 students from an IB charter school.</li>
 										<li>my role model is my lovely mother.</li>
-										<li>im obsessed with both coffee and tea--the scent, the taste, the texture, the art and meticulousness of preparing a singular cup.</li>
 										<li>id love to open my own café one day.</li>
-										<li>im allergic to dust, so i have to clean my room almost every day especially since i have a very, very fluffy pomeranian husky who sheds every single day :D</li>
-										<li>90% of my camera role consists of my six-year old pomsky. Her name is Yuki.</li>
-										<li>i like to play league of legends and valorant. am i good at them? well, "good" is relative.</li>
+										<li>im slightly allergic to dust.</li>
+										<li>i have a very, very fluffy pomsky named Yuki. she sheds like crazy :DD</li>
+										<li>my vision is really bad, my left eye is -6.00 and my right eye -5.00 for.</li>
+										<li>i like to play league of legends and valorant. am i good? well, "good" is relative.</li>
 									</ul>
+									<img src="images/yuki.JPG" id="yuki">
 								</div>
-
-								<!-- <button class="accordion">gallery</button>
-								<div class="panel">
-									<p>Lorem ipsum...</p>
-								</div> -->
-
 							</div>
-							</section> 
+						</div>
+					</section> 
 
 				<!-- Footer -->
+				<section id="contact">
 					<footer class="copyright">
 						<div class="footer">
-							<a href="mailto:cheung.jenn@northeastern.edu"><img width="34" height="34" src="https://img.icons8.com/nolan/64/new-post.png" alt="new-post"/></a>
-							<a href="https://www.linkedin.com/in/jennifer-cheung1/"><img width="34" height="34" src="https://img.icons8.com/nolan/64/linkedin.png" alt="linkedin"/></a>
-							<a href="https://github.com/jeniichee"><img width="34" height="34" src="https://img.icons8.com/nolan/64/github.png" alt="github" alt="github"/></a>
-							<a href="https://www.instagram.com/jeniichee/"><img width="34" height="34" src="https://img.icons8.com/nolan/64/instagram-new.png" alt="instagram-new"/></a>					
+							<a href="mailto:cheung.jenn@northeastern.edu"><img width="74" height="74" src="https://img.icons8.com/nolan/64/new-post.png" alt="new-post"/></a>
+							<a href="https://www.linkedin.com/in/jennifer-cheung1/"><img width="74" height="74" src="https://img.icons8.com/nolan/64/linkedin.png" alt="linkedin"/></a>
+							<a href="https://github.com/jeniichee"><img width="74" height="74" src="https://img.icons8.com/nolan/64/github.png" alt="github" alt="github"/></a>
+							<a href="https://www.instagram.com/jeniichee/"><img width="74" height="74" src="https://img.icons8.com/nolan/64/instagram-new.png" alt="instagram-new"/></a>					
 						</div>
 						Coded by Jennifer Cheung  🌸 2023 🌸
 					</footer>
+				</section>
 
 			<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 			<script src="assets/script/script.js"></script>

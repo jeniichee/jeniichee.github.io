@@ -23,23 +23,27 @@ typewriter.typeString('hello!')
     .pauseFor(1500)
     .deleteAll() 
 
-    .typeString('i am also interested in design and business.')
+    .typeString('i am also interested in design and engineering.')
     .pauseFor(1500)
     .deleteAll() 
 
-    .typeString('my work serves to empower others and enhance lives.')
+    .typeString('my work serves to empower others')
     .pauseFor(1500)
     .deleteAll()
 
-    .typeString('in my free time, i like to take long walks with my puppy.')
+    .typeString('and enhance lives.')
     .pauseFor(1500)
     .deleteAll()
 
-    .typeString('i am also a coffee enthusiast.')
+    .typeString('in my free time, i like to watch k-dramas.')
     .pauseFor(1500)
     .deleteAll()
 
-    .typeString('i find peace in selfcare (gym, skincare, cosmetics).')
+    .typeString('i am also a coffee and tea enthusiast.')
+    .pauseFor(1500)
+    .deleteAll()
+
+    .typeString('my definition of selfcare is the gym, skincare, and food.')
     .pauseFor(1500)
     .deleteAll()
 
@@ -61,7 +65,6 @@ typewriter.typeString('hello!')
 //   }
 
 // open accordian 
-
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -78,9 +81,9 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-// navbar scroll 
 
-window.addEventListener("scroll", () => scroll);
+// navbar scroll 
+window.addEventListener("scroll", scroll);
 
 function scroll() {
   const header = document.querySelector("#header").offsetHeight;

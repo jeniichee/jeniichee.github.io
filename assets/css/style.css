@@ -30,6 +30,7 @@ h2 {
 	color: inherit;
 	line-height: 1.5;
 	margin: 0 0 1rem 0;
+	padding-top: 50px; 
 	text-transform: uppercase;
 	letter-spacing: 0.2rem;
 }
@@ -154,7 +155,7 @@ a:hover {
 	line-height: 22px;
 	height: 450px;
 	width: 699px;
-	background-color: #8F837A;
+	background-color: black;
 	box-shadow:
 	 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
 	 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -291,12 +292,20 @@ a:hover {
 #morecon {
 	margin: 40px;
 	margin-top: 0; 
-	padding: 100px; 
+	padding-bottom: 100px;
 	height: 100%; 
 	width: auto; 
 	overflow: hidden;
 	display: flex;
 	flex-direction: column; 
+}
+
+#yuki {
+	border-radius: 50%; 
+    max-width: 300px; 
+    max-height: 300px;
+	margin: 20px;
+	margin-left: 150px; 
 }
 
 .accordion {
@@ -315,17 +324,25 @@ a:hover {
   }
   
   .panel {
-	height:auto;
+	height: auto;
 	padding: 0 18px;
 	background-color: white;
 	color: black; 
 	display: none;
+	flex-direction: row; 
   }
 
   .panel p {
 	text-align: center;
   }
 
+  .panel li {
+	font-size: larger;
+  }
+.bulletpoints {
+	display: flex; 
+	flex-direction: row; 
+}
 /* footer */
 
 .copyright {
