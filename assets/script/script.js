@@ -23,7 +23,7 @@ typewriter.typeString('hello!')
     .pauseFor(1500)
     .deleteAll() 
 
-    .typeString('i am also interested in design and engineering.')
+    .typeString('i am also interested in design and product development.')
     .pauseFor(1500)
     .deleteAll() 
 
@@ -40,10 +40,6 @@ typewriter.typeString('hello!')
     .deleteAll()
 
     .typeString('i am also a coffee and tea enthusiast.')
-    .pauseFor(1500)
-    .deleteAll()
-
-    .typeString('my definition of selfcare is the gym, skincare, and food.')
     .pauseFor(1500)
     .deleteAll()
 
