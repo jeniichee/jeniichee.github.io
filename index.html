@@ -1,40 +1,43 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
 <html>
-	<head>
-		<title>Jennifer Cheung</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link rel="stylesheet" href="assets/css/style.css" />
-	</head>
-	<body>
-				<!--Heading -->
-				<section id="header">
-		
-				<div class="nav">
-					<nav>
-						<ul>
-						   <a href="#header"><li id="name">Jennifer Cheung</li></a>
-							<li><a href="#about">About</a></li>
-							<li><a href="#projects">Projects</a></li>
-							<!-- <li><a href="#more">Learn More</a></li> -->
-							<li><a href="#contact">Contact Me</a></li>
-						</ul>
-					</nav>
-				</div>
+  <head>
+    <title>Jennifer Cheung</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!--Heading -->
+    <section id="header">
+      <div class="nav">
+        <nav>
+          <ul>
+            <a href="#header"><li id="name">Jennifer Cheung</li></a>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <p id="app"></p>
+      </div>
+    </section>
 
-					<div class="content">
-						<p id="app"></p>
-				</div>
-
-				</section>
-
-						<!-- About -->
-						<section id="about">
-							<h2 class="major">About</h2>
-							<div id="container"> 
-							  <div class="me"><pre>
+    <!-- About -->
+    <section id="about">
+      <h2 class="major">About</h2>
+      <div id="container">
+        <div class="me">
+          <pre>
 package me; 
 
 public class Jennifer implements Integrity, Simplicity, Honesty {
@@ -72,149 +75,180 @@ public class Jennifer implements Integrity, Simplicity, Honesty {
 			"Sustainabilitiy"
 		}; 
 	}
-}</pre>
-</div>
-<div class="polariod">
-  <img src="images/jen.jpg" id="about-img">
-  <div class="dis">
-	<p></p>
-  </div>
-</div>
-</div>
-</section>
+}
+</pre>
+        </div>
+        <div class="polariod">
+          <img src="images/jen.jpg" id="about-img" />
+          <div class="dis">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-						<!-- Projects -->
-							<section id="projects">
-								<h2 class="major">Projects</h2>
-								<div class="project">
-									<input type="radio" name="dot" id="one">
-									<input type="radio" name="dot" id="two">
-									<div class="main-card">
-										
-											<div class="card">
-												<p>BattleSalvo</p>
-												<img width="64" height="64" src="https://img.icons8.com/dusk/64/knight--v1.png" alt="knight--v1"/>
-												<div class="back">
-													<p> Java command-line rendition of classic Battleship with a twist. 
-														Supports both single-player vs. AI and multiplayer via sockets. 
-														Communication between server and client are serialized into files to 
-														ensure persistance.</p>
-												  </div>
-											</div>									
+    <!-- Projects -->
+    <section id="projects">
+      <h2 class="major">Projects</h2>
+      <div class="project">
+        <input type="radio" name="dot" id="one" />
+        <input type="radio" name="dot" id="two" />
+        <div class="main-card">
+          <div class="card">
+            <p>BattleSalvo</p>
+            <img
+              width="64"
+              height="64"
+              src="https://img.icons8.com/dusk/64/knight--v1.png"
+              alt="knight--v1"
+            />
+            <div class="back">
+              <p>
+                Java command-line rendition of classic Battleship with a twist.
+                Supports both single-player vs. AI and multiplayer via sockets.
+                Communication between server and client are serialized into
+                files to ensure persistance.
+              </p>
+            </div>
+          </div>
 
-											<div class="card">
-												<p>maze</p>
-												<img width="64" height="64" src="https://img.icons8.com/external-outline-berkahicon/64/external-maze-mental-health-outline-berkahicon.png" alt="external-maze-mental-health-outline-berkahicon"/>
-												<div class="back">		
-													<p>Players navigate mazes from the top-left corner to the bottom-right corner, and solves it 
-														using either BFS or DFS. The mazes are randomly generated using Kruskal’s Algorithm. Graphical 
-													interface renders cells and highlights actions.</p>
-												  </div>
-											</div>	
+          <div class="card">
+            <p>maze</p>
+            <img
+              width="64"
+              height="64"
+              src="https://img.icons8.com/external-outline-berkahicon/64/external-maze-mental-health-outline-berkahicon.png"
+              alt="external-maze-mental-health-outline-berkahicon"
+            />
+            <div class="back">
+              <p>
+                Players navigate mazes from the top-left corner to the
+                bottom-right corner, and solves it using either BFS or DFS. The
+                mazes are randomly generated using Kruskal’s Algorithm.
+                Graphical interface renders cells and highlights actions.
+              </p>
+            </div>
+          </div>
 
-											<div class="card">
-													<p>second-chance</p>
-													<img width="64" height="64" src="https://img.icons8.com/hands/100/experimental-clothes-hands.png" alt="experimental-clothes-hands"/>
-												  <div class="back">
-													<p>Platform for individuals to sell their clothes to others. Users can upload photos and descriptions of their items, 
-														browse products, add items to their cart, and manage their profile. The project utilizes a MySQL 8 
-														container, a Python Flask container for REST API, and a local AppSmith server for deployment.</p>
-												  </div>
+          <div class="card">
+            <p>second-chance</p>
+            <img
+              width="64"
+              height="64"
+              src="https://img.icons8.com/hands/100/experimental-clothes-hands.png"
+              alt="experimental-clothes-hands"
+            />
+            <div class="back">
+              <p>
+                Platform for individuals to sell their clothes to others. Users
+                can upload photos and descriptions of their items, browse
+                products, add items to their cart, and manage their profile. The
+                project utilizes a MySQL 8 container, a Python Flask container
+                for REST API, and a local AppSmith server for deployment.
+              </p>
+            </div>
+          </div>
 
-											</div>
+          <div class="card">
+            <p>bullet journal</p>
+            <img
+              width="64"
+              height="64"
+              src="https://img.icons8.com/dusk/64/book.png"
+              alt="book"
+            />
+            <div class="back">
+              <p>
+                Interactive application developed with SceneBuilder, JavaFX, and
+                Java to track events/tasks for individual weeks. Features: week
+                view, event/task creation, persistence using JSON encoding,
+                deletion of events/tasks, editing existing events/tasks, and
+                categories.
+              </p>
+            </div>
+          </div>
 
-											<div class="card">
-												<p>bullet journal</p>
-												<img width="64" height="64" src="https://img.icons8.com/dusk/64/book.png" alt="book"/>
-												<div class="back">
-													<p>Interactive application developed with SceneBuilder, JavaFX, and Java to track events/tasks for individual weeks. 
-														Features: week view, event/task creation, persistence using JSON encoding, deletion of events/tasks,
-														editing existing events/tasks, and categories.</p>
-												  </div>
-											</div>									
+          <div class="card">
+            <p>personal website</p>
+            <img
+              width="64"
+              height="64"
+              src="https://img.icons8.com/external-vectorslab-outline-color-vectorslab/53/external-website-mobile-shopping-vectorslab-outline-color-vectorslab.png"
+              alt="external-website-mobile-shopping-vectorslab-outline-color-vectorslab"
+            />
+            <div class="back">
+              <p>
+                This website is entirely coded in HTML, CSS, and JavaScript!
+                Still (and always) ready for improvement.
+              </p>
+            </div>
+          </div>
 
-											<div class="card">
-												<p>personal website</p>
-												<img width="64" height="64" src="https://img.icons8.com/external-vectorslab-outline-color-vectorslab/53/external-website-mobile-shopping-vectorslab-outline-color-vectorslab.png" alt="external-website-mobile-shopping-vectorslab-outline-color-vectorslab"/>
-												<div class="back">
-													<p>This website is entirely coded in HTML, CSS, and JavaScript! Still (and always) ready for improvement.</p>
-												  </div>
-											</div>
-											
-											<div class="card">
-												<p>aquasense</p>
-												<img width="64" height="64" src="https://img.icons8.com/dusk/64/water-bottle.png" alt="water-bottle"/>
-												<div class="back">
-													<p>water bottle gadget developed using an arduino nano and etape sensor. tracks a person's daily water intake. 
-														data collected is displayed on a website.</p>
-												  </div>
-											</div>
-										
-									</div>
-									<div class="button">
-										<label for="one" class=" active one"></label>
-										<label for="two" class="two"></label>
-									</div>
-								</div>
-							</section>
+          <div class="card">
+            <p>aquasense</p>
+            <img
+              width="64"
+              height="64"
+              src="https://img.icons8.com/dusk/64/water-bottle.png"
+              alt="water-bottle"
+            />
+            <div class="back">
+              <p>
+                water bottle gadget developed using an arduino nano and etape
+                sensor. tracks a person's daily water intake. data collected is
+                displayed on a website.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <label for="one" class="active one"></label>
+          <label for="two" class="two"></label>
+        </div>
+      </div>
+    </section>
 
-							<!-- Learn More -->
-							<!-- <section id="more"> 
-								<h2 class="major">Learn More</h2>
-								<div id="morecon">
-								<button class="accordion">my mind</button>
-								<div class="panel">
-									<p><strong>take a peek inside my mind.</strong></p>
-										<p>
-										im a perpetual student.<br>
-										always choose positivity.<br>
-										be a bringer of joy and laughter.<br>
-								        finite to fail, infinite to venture.<br>
-										we will always either find a way, or make one.<br>
-										pursue whatever you are truly passionate about.<br>
-										seize every moment, relishing in the simple joy.<br>
-										embody the unyielding force of love and compassion.<br>
-										be a tapestry of strength, resilience, and boundless dreams.<br>	
-									</p>
-								</div>
+    <!-- Footer -->
+    <section id="contact">
+      <footer class="copyright">
+        <div class="footer">
+          <a href="mailto:cheung.jenn@northeastern.edu"
+            ><img
+              width="74"
+              height="74"
+              src="https://img.icons8.com/nolan/64/new-post.png"
+              alt="new-post"
+          /></a>
+          <a href="https://www.linkedin.com/in/jennifer-cheung1/"
+            ><img
+              width="74"
+              height="74"
+              src="https://img.icons8.com/nolan/64/linkedin.png"
+              alt="linkedin"
+          /></a>
+          <a href="https://github.com/jeniichee"
+            ><img
+              width="74"
+              height="74"
+              src="https://img.icons8.com/nolan/64/github.png"
+              alt="github"
+              alt="github"
+          /></a>
+          <a href="https://www.instagram.com/jeniichee/"
+            ><img
+              width="74"
+              height="74"
+              src="https://img.icons8.com/nolan/64/instagram-new.png"
+              alt="instagram-new"
+          /></a>
+        </div>
+        Coded by Jennifer Cheung 🌸 2023 🌸
+      </footer>
+    </section>
 
-								<button class="accordion">random facts</button>
-								<div class="panel">
-									<div class="bulletpoints">
-									<ul>
-										<li><u>mbti:</u> infj-t</li>
-										<li><u>early career preferences</u>: singer, artist, patisserie, chef, aerospace engineer, neurosurgeon</li>
-										<li>i graduated with a class of 85 students from an IB charter school.</li>
-										<li>my role model is my lovely mother.</li>
-										<li>id love to open my own café one day.</li>
-										<li>im slightly allergic to dust.</li>
-										<li>i have a very, very fluffy pomsky named Yuki. she sheds like crazy :DD</li>
-										<li>my vision is really bad, my left eye is -6.00 and my right eye -5.00.</li>
-										<li>i like to play league of legends and valorant. am i good? well, "good" is relative.</li>
-									</ul>
-									<img src="images/yuki.JPG" id="yuki">
-								</div>
-							</div>
-						</div>
-					</section>  -->
-
-				<!-- Footer -->
-				<section id="contact">
-					<footer class="copyright">
-						<div class="footer">
-							<a href="mailto:cheung.jenn@northeastern.edu"><img width="74" height="74" src="https://img.icons8.com/nolan/64/new-post.png" alt="new-post"/></a>
-							<a href="https://www.linkedin.com/in/jennifer-cheung1/"><img width="74" height="74" src="https://img.icons8.com/nolan/64/linkedin.png" alt="linkedin"/></a>
-							<a href="https://github.com/jeniichee"><img width="74" height="74" src="https://img.icons8.com/nolan/64/github.png" alt="github" alt="github"/></a>
-							<a href="https://www.instagram.com/jeniichee/"><img width="74" height="74" src="https://img.icons8.com/nolan/64/instagram-new.png" alt="instagram-new"/></a>					
-						</div>
-						Coded by Jennifer Cheung  🌸 2023 🌸
-					</footer>
-				</section>
-
-			<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-			<script src="assets/script/script.js"></script>
-
-	</body>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="assets/script/script.js"></script>
+  </body>
 </html>
 
 <!-- Creds: 
