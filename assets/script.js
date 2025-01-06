@@ -79,17 +79,15 @@ for (i = 0; i < acc.length; i++) {
 
 
 // navbar scroll 
-window.addEventListener("scroll", scroll);
+window.addEventListener("scroll", function () {
+  const headerHeight = document.querySelector("#header").offsetHeight;
+  const navbar = document.querySelector(".nav");
 
-function scroll() {
-  const header = document.querySelector("#header").offsetHeight;
-  const navbar = document.querySelector(".nav")
-  
-  if (window.pageYOffset >= header) {
+  if (window.pageYOffset >= headerHeight) {
     navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
   }
-}
+});
 
   
