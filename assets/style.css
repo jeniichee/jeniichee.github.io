@@ -52,6 +52,7 @@ h2.major {
   color: black; 
   margin: 0; 
   padding: 0;
+  position: fixed; 
 }
 
 nav ul {
@@ -73,9 +74,10 @@ nav ul li a {
     border-bottom: 0;
 }
 
-a:hover {
-    border-bottom-color: transparent;
-}
+nav a:hover { 
+  background-color: #ddd; 
+  color: black; 
+} 
 
 .name {
     font-family: "Sulphur Point", sans-serif;
