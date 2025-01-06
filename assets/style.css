@@ -48,6 +48,7 @@ h2.major {
   z-index: 1;
   border: 0; 
   position: sticky;
+  color: black; 
 }
 
 nav ul {
