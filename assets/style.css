@@ -48,27 +48,36 @@ h2.major {
   background-color: #f6f5f3;
   z-index: 1;
   position: sticky; /* Keeps the navbar at the top */
-  top: 0;
-  width: 100%;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  top: 0; /* Ensures it sticks to the top */
+  width: 100%; /* Full width */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 0; /* Remove any unintended margin */
+  padding: 0; /* Remove padding */
 }
 
+/* Reset any default body margins */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Center navbar items within it */
 nav ul {
   list-style: none;
   display: flex;
-  justify-content: center; /* Center the links */
+  justify-content: center; /* Align links in the center horizontally */
   padding: 0;
   margin: 0;
 }
 
 nav ul li {
-  margin: 0 1rem;
+  margin: 0 1rem; /* Spacing between links */
 }
 
 nav ul li a {
   display: block;
   text-transform: uppercase;
-  text-decoration: none;
+  text-decoration: none; /* Remove underline */
   text-align: center;
   min-width: 7.5rem;
   height: 2.75rem;
@@ -77,23 +86,24 @@ nav ul li a {
   font-size: 0.8rem;
   font-family: "Sulphur Point", sans-serif;
   font-weight: bold;
-  color: #333;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
+  color: #333; /* Default link color */
+  transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth hover effect */
 }
 
 nav ul li a:hover {
-  color: #007acc;
-  border-bottom: 2px solid #007acc;
+  color: #007acc; /* Hover link color */
+  border-bottom: 2px solid #007acc; /* Add underline effect */
 }
 
 .name a {
   font-size: 1rem;
-  color: #000;
+  color: #000; /* Stronger color for the name */
 }
 
 .name a:hover {
   color: #007acc;
 }
+
 
 /* header */
 #header {
