@@ -110,7 +110,7 @@ a:hover {
   margin-top: 20px;
 }
 
-#container {
+.bio-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -118,7 +118,7 @@ a:hover {
   margin-top: 0;
 }
 
-.me {
+.bio {
   margin: 40px;
   padding: 30px;
   flex-direction: row;
@@ -130,9 +130,13 @@ a:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.me pre {
+.bio pre {
   font-size: 90%;
   font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+
+.bio pre a {
   color: white;
 }
 
