@@ -47,6 +47,7 @@ h2.major {
   background-color: #f6f5f3;
   z-index: 1;
   border: 0; 
+  position: sticky;
 }
 
 nav ul {
