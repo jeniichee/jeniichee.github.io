@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Jennifer Cheung</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!--Heading -->
+    <section id="header">
+      <div class="nav">
+        <nav>
+          <ul>
+            <a href="#header"><li id="name">Jennifer Cheung</li></a>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content">
+        <p id="app"></p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <h2 class="major">About</h2>
+      <div id="container">
+        <div class="me">
+          <pre>
+package me.myself.and.i;
+
+import java.util.Arrays;
+import java.util.HashMap;
+
+public class Jen {
+
+    public static void main(String[] args) {
+        String governmentName = "Jennifer Cheung";
+        String spawnPoint = "Massachusetts";
+        String brainLocation = "Northeastern University";
+        String resume = "<a href="assets/Jennifer Cheung.pdf"><u>Resume</u></a>";  
+        String[] dualCoreProcessor = {"Computer Science", "Neuroscience"};
+          
+        HashMap<String, Integer> freedomDate = new HashMap<>() {{
+            put("Month", 12);
+            put("Year", 2024);
+        }};
+        
+        String[] packagesInstalled = {
+            "CardioMaster 3000",
+            "EspressoConnoisseur.jar",
+            "PicassoWannabe.png",
+            "ShutterBug.raw",
+        };
+        
+        System.out.println("Compiling Jen.java...");
+        System.out.println("Warning: Expect occasional energy bursts and frequent coffee breaks.");   
+        System.out.println("Jen.exe is now running."); 
+        System.out.println("Enjoy your day! 🌟");
+    }
+}
+</pre>
+        </div>
+        <div class="polariod">
+          <img src="images/jen.jpg" id="about-img" />
+          <div class="dis">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2 class="major">Projects</h2>
+      <div class="project">
+        <input type="radio" name="dot" id="one" />
+        <input type="radio" name="dot" id="two" />
+        <div class="main-card">
+          <div class="card">
+            <p>BattleSalvo</p>
+            <img
+              width="64"
+              height="64"
+              src="https://img.icons8.com/dusk/64/knight--v1.png"
+              alt="knight--v1"
+            />
+            <div class="back">
+              <p>
+                Java command-line rendition of classic Battleship with a twist.
+                Supports both single-player vs. AI and multiplayer via sockets.
+                Communication between server and client are serialized into
+                files to ensure persistance.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <p>maze</p>
+            <img
+              width="64"
+              height="64"
+              src="https://img.icons8.com/external-outline-berkahicon/64/external-maze-mental-health-outline-berkahicon.png"
+              alt="external-maze-mental-health-outline-berkahicon"
+            />
+            <div class="back">
+              <p>
+                Players navigate mazes from the top-left corner to the
+                bottom-right corner, and solves it using either BFS or DFS. The
+                mazes are randomly generated using Kruskal's Algorithm.
+                Graphical interface renders cells and highlights actions.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <p>second-chance</p>
+            <img
+              width="64"
+              height="64"
+              src="https://img.icons8.com/hands/100/experimental-clothes-hands.png"
+              alt="experimental-clothes-hands"
+            />
+            <div class="back">
+              <p>
+                Platform for individuals to sell their clothes to others. Users
+                can upload photos and descriptions of their items, browse
+                products, add items to their cart, and manage their profile. The
+                project utilizes a MySQL 8 container, a Python Flask container
+                for REST API, and a local AppSmith server for deployment.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <p>bullet journal</p>
+            <img
+              width="64"
+              height="64"
+              src="https://img.icons8.com/dusk/64/book.png"
+              alt="book"
+            />
+            <div class="back">
+              <p>
+                Interactive application developed with SceneBuilder, JavaFX, and
+                Java to track events/tasks for individual weeks. Features: week
+                view, event/task creation, persistence using JSON encoding,
+                deletion of events/tasks, editing existing events/tasks, and
+                categories.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <p>personal website</p>
+            <img
+              width="64"
+              height="64"
+              src="https://img.icons8.com/external-vectorslab-outline-color-vectorslab/53/external-website-mobile-shopping-vectorslab-outline-color-vectorslab.png"
+              alt="external-website-mobile-shopping-vectorslab-outline-color-vectorslab"
+            />
+            <div class="back">
+              <p>
+                This website is entirely coded in HTML, CSS, and JavaScript!
+                Still (and always) ready for improvement.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <p>aquasense</p>
+            <img
+              width="64"
+              height="64"
+              src="https://img.icons8.com/dusk/64/water-bottle.png"
+              alt="water-bottle"
+            />
+            <div class="back">
+              <p>
+                water bottle gadget developed using an arduino nano and etape
+                sensor. tracks a person's daily water intake. data collected is
+                displayed on a website.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <label for="one" class="active one"></label>
+          <label for="two" class="two"></label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="contact">
+      <footer class="copyright">
+        <div class="footer">
+          <a href="mailto:cheung.jenn@northeastern.edu"
+            ><img
+              width="74"
+              height="74"
+              src="https://img.icons8.com/nolan/64/new-post.png"
+              alt="new-post"
+          /></a>
+          <a href="https://www.linkedin.com/in/jennifer-cheung1/"
+            ><img
+              width="74"
+              height="74"
+              src="https://img.icons8.com/nolan/64/linkedin.png"
+              alt="linkedin"
+          /></a>
+          <a href="https://github.com/jeniichee"
+            ><img
+              width="74"
+              height="74"
+              src="https://img.icons8.com/nolan/64/github.png"
+              alt="github"
+          /></a>
+          <a href="https://www.instagram.com/jeniichee/"
+            ><img
+              width="74"
+              height="74"
+              src="https://img.icons8.com/nolan/64/instagram-new.png"
+              alt="instagram-new"
+          /></a>
+        </div>
+      </footer>
+    </section>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="assets/script/script.js"></script>
+  </body>
+</html>
+
+<!-- Creds: 
+	icons by: https://icons8.com/ -->
