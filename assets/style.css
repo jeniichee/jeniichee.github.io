@@ -112,7 +112,7 @@ a:hover {
   margin-top: 20px;
 }
 
-.bio-container {
+#container {
   display: flex;
   flex-direction: row;
   align-items: center;
