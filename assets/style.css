@@ -47,8 +47,12 @@ h2.major {
   background-color: #f6f5f3;
   z-index: 1;
   border: 0; 
+  top: 0;
+  width: 100%; 
   position: sticky;
   color: black; 
+  margin: 0; 
+  padding: 0;
 }
 
 nav ul {
