@@ -68,8 +68,13 @@ nav ul li a {
     border-bottom: 0;
 }
 
+a {
+  color: inherit; 
+  text-decoration: none; 
+}
+
 a:hover {
-    border-bottom-color: transparent;
+  text-decoration: underline;
 }
 
 .name {
