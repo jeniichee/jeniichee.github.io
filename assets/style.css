@@ -42,78 +42,49 @@ h2.major {
   margin-left: 2rem;
 }
 
-/* List */
-/* Navbar styles */
+/* navbar */
 .nav {
   background-color: #f6f5f3;
   z-index: 1;
-  position: sticky; /* Keeps the navbar at the top */
-  top: 0; /* Ensures it sticks to the top */
-  width: 100%; /* Full width */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  margin: 0; /* Remove any unintended margin */
-  padding: 0; /* Remove padding */
+  border: 0; 
 }
 
-/* Reset any default body margins */
-body {
-  margin: 0;
-  padding: 0;
-}
-
-/* Center navbar items within it */
 nav ul {
   list-style: none;
-  display: flex;
-  justify-content: center; /* Align links in the center horizontally */
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  margin: 0 1rem; /* Spacing between links */
+  display: flex; 
+  margin: 0; 
 }
 
 nav ul li a {
-  display: block;
-  text-transform: uppercase;
-  text-decoration: none; /* Remove underline */
-  text-align: center;
-  min-width: 7.5rem;
-  height: 2.75rem;
-  line-height: 2.75rem;
-  letter-spacing: 0.2rem;
-  font-size: 0.8rem;
-  font-family: "Sulphur Point", sans-serif;
-  font-weight: bold;
-  color: #333; /* Default link color */
-  transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth hover effect */
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center; 
+    min-width: 7.5rem; 
+    height: 2.75rem; 
+    line-height: 2.75rem; 
+    letter-spacing: 0.2rem; 
+    font-size: 0.8rem; 
+    border-bottom: 0;
 }
 
-nav ul li a:hover {
-  color: #007acc; /* Hover link color */
-  border-bottom: 2px solid #007acc; /* Add underline effect */
+a:hover {
+    border-bottom-color: transparent;
 }
 
-.name a {
-  font-size: 1rem;
-  color: #000; /* Stronger color for the name */
+.name {
+    font-family: "Sulphur Point", sans-serif;
+    font-weight: bolder;
 }
-
-.name a:hover {
-  color: #007acc;
-}
-
 
 /* header */
 #header {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   width: 100%;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
 }
 
 .content p {
@@ -124,7 +95,6 @@ nav ul li a:hover {
 }
 
 /* about */
-
 #about {
   min-height: 100vh;
   min-width: 100vh;
