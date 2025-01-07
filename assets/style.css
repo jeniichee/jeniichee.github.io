@@ -64,6 +64,11 @@ nav ul {
   margin: 0; 
 }
 
+nav a {
+  background-color: inherit;
+  color: black; 
+}
+
 nav ul li a {
     display: block;
     text-transform: uppercase;
