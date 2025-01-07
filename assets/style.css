@@ -55,6 +55,7 @@ a {
   width: 100%; 
   margin: 0; 
   padding: 0;
+  background-color: #c7c7bb;
 }
 
 nav ul {
@@ -65,7 +66,6 @@ nav ul {
 }
 
 nav a {
-  background-color: inherit;
   color: black; 
 }
 
