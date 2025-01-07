@@ -53,12 +53,12 @@ a {
   border: 0; 
   top: 0;
   width: 100%; 
-  color: black; 
   margin: 0; 
   padding: 0;
 }
 
 nav ul {
+  color: black; 
   list-style: none;
   display: flex; 
   margin: 0; 
@@ -75,6 +75,7 @@ nav ul li a {
     letter-spacing: 0.2rem; 
     font-size: 0.8rem; 
     border-bottom: 0;
+    color: black; 
 }
 
 nav a:hover { 
@@ -149,6 +150,11 @@ nav a:hover {
 .me pre a {
   color: white;
 }
+
+.me pre a u {
+  color: white;
+}
+
 
 .polariod {
   width: inherit;
