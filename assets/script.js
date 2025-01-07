@@ -19,27 +19,43 @@ typewriter.typeString('hello!')
     .pauseFor(1500)
     .deleteAll()
 
-    .typeString('i am studying cs and neuro.')
+    .typeString('i am a software engineer.')
     .pauseFor(1500)
     .deleteAll() 
 
-    .typeString('i am also interested in design and product development.')
-    .pauseFor(1500)
-    .deleteAll() 
-
-    .typeString('my work serves to empower others')
+    .typeString('with core strengths in backend, frontend, & fullstack dev.')
     .pauseFor(1500)
     .deleteAll()
 
-    .typeString('and enhance lives.')
+    .typeString('i recently graduated from northeastern university.')
+    .pauseFor(1500)
+    .deleteAll()
+    
+    .typeString('with keen interest in biotech & healthcare,')
+    .pauseFor(1500)
+    .deleteAll()
+    
+    .typeString('i am currently seeking full-time opportunities')
     .pauseFor(1500)
     .deleteAll()
 
-    .typeString('in my free time, i like to watch k-dramas.')
+    .typeString('in any industry')
     .pauseFor(1500)
     .deleteAll()
 
-    .typeString('i am also a coffee and tea enthusiast.')
+    .typeString('where i can apply my analytical and creative skills')
+    .pauseFor(1500)
+    .deleteAll()
+
+    .typeString('to create scalable and peformant software')
+    .pauseFor(1500)
+    .deleteAll()
+
+    .typeString('that serves to empower and connect the people.')
+    .pauseFor(1500)
+    .deleteAll()
+
+    .typeString('please feel free to reach out to me.')
     .pauseFor(1500)
     .deleteAll()
 
