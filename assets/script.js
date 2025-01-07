@@ -23,11 +23,11 @@ typewriter.typeString('hello!')
     .pauseFor(1500)
     .deleteAll() 
 
-    .typeString('with core strengths in backend, frontend, & fullstack dev.')
+    .typeString('with core strengths in backend, frontend, & fullstack.')
     .pauseFor(1500)
     .deleteAll()
 
-    .typeString('i recently graduated from northeastern university.')
+    .typeString('i recently graduated from northeastern uni.')
     .pauseFor(1500)
     .deleteAll()
     
@@ -43,7 +43,7 @@ typewriter.typeString('hello!')
     .pauseFor(1500)
     .deleteAll()
 
-    .typeString('where i can apply my analytical and creative skills')
+    .typeString('where i can apply my analytical & creative skills')
     .pauseFor(1500)
     .deleteAll()
 
